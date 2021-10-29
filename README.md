@@ -1,29 +1,25 @@
-# Next.js + Tailwind CSS Example
+# My personal site 🎉
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Tech stack
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+### React vs. Vue
+I knew I wanted to use React. I feel like Vue would resonate better with me, but I've found more times in my career that React was more important to know than Vue. I also acknowledge there are more options than React and Vue, but those were the two that would further my professional growth.
 
-## Preview
+### Next.js vs. Gatsby vs. `create-react-app`
+This was a tougher decision. While I could've just used plain React, I thought it would make the site more extensibile and easy to develop in if I used a framework to assist with the generation and compilation of the site. After a lot of failed attempts using Gatsby and `create-react-app`, I ended up taking a Next.js tutorial and really loving it. While SSR might be overkill for a personal site, I felt the dynamic pages of Next.js would allow me to easily add a blog when I choose to go after that.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+### Styled-Components vs. Chakra vs. Tailwind
+I know these aren't very equatable, but it was essentially my journey to choosing a CSS framework. At first, I loved Styled-Components because it was still _like_ writing CSS but less clunky. However, I came to terms with the fact that I am not a CSS master and need help. I then pivoted to Chakra since the UI on my team was built using that. It was pretty nice and I admit I didn't give it much of a chance. I ended up watching a Tailwind tutorial on YouTube and seeing how easy and flexible it was, I was convinced.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Upcoming tasks
+- [x] Dark mode toggle
+- [ ] Hero
+- [ ] Section tabs
+- [ ] About section
+- [ ] Experience section
+- [ ] Contact section
+- [ ] CI/CD
 
-## Deploy your own
+MVP complete
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- [ ] Blog
