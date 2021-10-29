@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Switch } from '@headlessui/react';
+import { useTheme } from 'next-themes';
 
 
 function classNames(...classes) {
@@ -9,42 +10,27 @@ function classNames(...classes) {
 const DarkModeToggle = () => {
   const [mounted, setMounted] = useState(false);
   const [enabled, setEnabled] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     if (!mounted) { // setup for initial render
-      let theme = localStorage.theme ? localStorage.theme : "light";
-      if (!localStorage.theme) {
-        localStorage.theme = theme;
-      }
-      if (theme === "dark") {
-        document.documentElement.classList.add(theme);
-        if (!enabled) {
-          setEnabled(true);
-        }
+      if (theme === "dark" && !enabled) {
+        setEnabled(true);
       }
       setMounted(true);
       return;
     }
 
-    let theme = localStorage.theme ? localStorage.theme : "light";
     if (enabled !== (theme === "dark")) {
-      const root = document.documentElement;
-      // remove dark theme if toggling to light
       if (theme === "dark") {
-        root.classList.remove(theme);
+        setTheme("light");
+      } else {
+        setTheme("dark");
       }
-
-      // add dark theme if toggling to dark
-      theme = theme === "dark" ? "light" : "dark";
-      if (theme === "dark") {
-        root.classList.add(theme);
-      }
-
-      localStorage.theme = theme;
     }
   })
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
   return (
     <div className="fixed top-2 right-2" > 
