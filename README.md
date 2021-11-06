@@ -13,8 +13,8 @@ I know these aren't very equatable, but it was essentially my journey to choosin
 
 ## Upcoming tasks
 - [x] Dark mode toggle
-- [ ] Hero
-- [ ] Section tabs
+- [x] Hero
+- [x] Section tabs
 - [ ] About section
 - [ ] Experience section
 - [ ] Contact section
