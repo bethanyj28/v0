@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import { ThemeProvider } from 'next-themes'
+import { GlobalStyles } from '../styles/globalstyles'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function Home({ Component, pageProps }) {
+  return (
+    <>
+    <GlobalStyles />
+    <ThemeProvider defaultTheme="system">
+      <Component {...pageProps} />
+    </ThemeProvider>
+    </>
+  )
 }
 
-export default MyApp
+export default Home
