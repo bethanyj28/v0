@@ -1,14 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import styled from 'styled-components'
-
-const Button = styled.button`
-    color: var(--primary-text)
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.25em 1em;
-    border-radius: 3px;
-`
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 const DarkModeToggle = () => {
     const [mounted, setMounted] = useState(false)
@@ -21,7 +15,7 @@ const DarkModeToggle = () => {
     if (!mounted) return null
 
     return (
-        <Button onClick={() => setTheme(theme === "light" ? "dark" : "light")}> switch theme </Button>
+        <FontAwesomeIcon onClick={() => setTheme(theme === "light" ? "dark" : "light")} icon={theme === "light" ? faMoon : faSun} size="lg" />
     )
 } 
 
