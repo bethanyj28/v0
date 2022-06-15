@@ -1,6 +1,8 @@
+import DarkModeToggle from './DarkModeToggle'
 import { device } from '../styles/devices'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import NavLinks from './NavLinks' 
 import styled from 'styled-components'
 import { useState } from 'react'
 
@@ -16,8 +18,9 @@ const Drawer = styled.aside`
   transform: translateX(${props => props.openMenu ? 0 : 100}vw);
   transition: 1s;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
 
   @media ${device.tablet} {
     display: none;
@@ -35,38 +38,11 @@ const Hamburger = styled.div`
   }
 `
 
-const Links = styled.ul`
-  list-style: none;
-  text-align: right;
+const Settings = styled.div`
+  margin: .5em 1em;
 `
 
-const Link = styled.a`
-  text-decoration: none;
-  color: var(--primary-text);
-  font-size: 5vh;
-  margin: 4em 1em;
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary-text);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: top right;
-  }
-
-  &:hover:before {
-    transform: scaleX(1);
-  }
-`
-
-const MobileMenu = (props) => {
+const MobileMenu = () => {
   const [openMenu, setOpenMenu] = useState(false)
 
   const toggleMenu = () => setOpenMenu(!openMenu)
@@ -77,9 +53,10 @@ const MobileMenu = (props) => {
       <FontAwesomeIcon icon={openMenu ? faXmark : faBars} size="lg" onClick={()=> toggleMenu()}/>
     </Hamburger>
     <Drawer openMenu={openMenu}>
-      <Links>
-        {props.sections.map((section) => <li key={section}><Link href={`#${section}`}>{section}</Link></li>)}
-      </Links>
+      <NavLinks />
+      <Settings>
+        <DarkModeToggle />
+      </Settings>
     </Drawer>
     </>
   )
