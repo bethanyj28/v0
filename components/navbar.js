@@ -1,6 +1,7 @@
-import styled from 'styled-components'
 import DarkModeToggle from './DarkModeToggle'
 import { device } from '../styles/devices'
+import MobileMenu from './MobileMenu'
+import styled from 'styled-components'
 
 const sections = ["about", "blog", "contact"]
 
@@ -23,25 +24,42 @@ const Link = styled.a`
   text-decoration: none;
   color: var(--primary-text);
   margin: 0 2em;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-text);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: top left;
+  }
+
+  &:hover:before {
+    transform: scaleX(1);
+  }
 `
 
 const Links = styled.ul`
-  visibility: hidden;
+  display: none;
 
   @media ${device.tablet} {
-    visibility: visible;
     display: flex;
     margin: 0 2em;
-    margin: 0;
     list-style: none;
   }
 `
 
 const Settings = styled.div`
-  visibility: hidden;
+  display: none;
 
   @media ${device.tablet} {
-    visibility: visible;
+    display: flex;
   }
 `
 
@@ -55,6 +73,7 @@ const NavBar = () => {
       <Settings>
         <DarkModeToggle />
       </Settings>
+      <MobileMenu sections={sections}></MobileMenu>
     </Bar>
   )
 }
