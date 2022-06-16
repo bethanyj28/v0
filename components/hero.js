@@ -14,9 +14,11 @@ const StyledHeader = styled.h1`
 `
 
 const Hero = () => {
-  return(
+  return (
     <HeroContainer>
-      <StyledHeader>{data.first_name} {data.last_name}</StyledHeader>
+      <StyledHeader>
+        {data.first_name} {data.last_name}
+      </StyledHeader>
     </HeroContainer>
   )
 }

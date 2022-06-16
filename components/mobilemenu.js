@@ -2,7 +2,7 @@ import DarkModeToggle from './DarkModeToggle'
 import { device } from '../styles/devices'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NavLinks from './NavLinks' 
+import NavLinks from './NavLinks'
 import styled from 'styled-components'
 import { useState } from 'react'
 
@@ -15,7 +15,7 @@ const Drawer = styled.aside`
   right: 0;
   background: var(--secondary-bg);
   z-index: 9;
-  transform: translateX(${props => props.openMenu ? 0 : 100}vw);
+  transform: translateX(${(props) => (props.openMenu ? 0 : 100)}vw);
   transition: 1s;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ const Hamburger = styled.div`
 `
 
 const Settings = styled.div`
-  margin: .5em 1em;
+  margin: 0.5em 1em;
 `
 
 const MobileMenu = () => {
@@ -49,15 +49,19 @@ const MobileMenu = () => {
 
   return (
     <>
-    <Hamburger>
-      <FontAwesomeIcon icon={openMenu ? faXmark : faBars} size="lg" onClick={()=> toggleMenu()}/>
-    </Hamburger>
-    <Drawer openMenu={openMenu}>
-      <NavLinks />
-      <Settings>
-        <DarkModeToggle />
-      </Settings>
-    </Drawer>
+      <Hamburger>
+        <FontAwesomeIcon
+          icon={openMenu ? faXmark : faBars}
+          size="lg"
+          onClick={() => toggleMenu()}
+        />
+      </Hamburger>
+      <Drawer openMenu={openMenu}>
+        <NavLinks />
+        <Settings>
+          <DarkModeToggle />
+        </Settings>
+      </Drawer>
     </>
   )
 }

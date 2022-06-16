@@ -1,4 +1,3 @@
-import { device } from '../styles/devices'
 import styled from 'styled-components'
 
 const StyledDiv = styled.div`

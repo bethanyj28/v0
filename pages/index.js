@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import NavBar from '../components/NavBar'
 
 export default function Home() {
-  return ( 
+  return (
     <>
       <Head>
         <title>Bethany Janos</title>
@@ -13,7 +13,7 @@ export default function Home() {
       <NavBar />
       <Container>
         <Hero />
-      </Container> 
+      </Container>
     </>
   )
 }

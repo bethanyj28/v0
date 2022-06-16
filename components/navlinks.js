@@ -1,7 +1,7 @@
 import { device } from '../styles/devices'
 import styled from 'styled-components'
 
-const sections = ["about", "blog", "contact"]
+const sections = ['about', 'blog', 'contact']
 
 const Links = styled.ul`
   list-style: none;
@@ -20,10 +20,10 @@ const Link = styled.a`
   font-size: 5vh;
   color: var(--primary-text);
   position: relative;
-  margin: 4em .5em;
+  margin: 4em 0.5em;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     width: 100%;
@@ -48,9 +48,13 @@ const Link = styled.a`
 
 const NavLinks = () => {
   return (
-      <Links>
-        {sections.map((section) => <li key={section}><Link href={`#${section}`}>{section}</Link></li>)}
-      </Links>
+    <Links>
+      {sections.map((section) => (
+        <li key={section}>
+          <Link href={`#${section}`}>{section}</Link>
+        </li>
+      ))}
+    </Links>
   )
 }
 
