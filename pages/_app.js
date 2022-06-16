@@ -1,12 +1,19 @@
-import 'tailwindcss/tailwind.css'
 import { ThemeProvider } from 'next-themes'
+import { GlobalStyles } from '../styles/globalstyles'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
-function MyApp({ Component, pageProps }) {
+config.autoAddCss = false
+
+function Home({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" enableSystem={false}>
+    <>
+    <GlobalStyles />
+    <ThemeProvider defaultTheme="system">
       <Component {...pageProps} />
     </ThemeProvider>
+    </>
   )
 }
 
-export default MyApp
+export default Home

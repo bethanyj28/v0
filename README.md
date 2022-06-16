@@ -1,25 +1,34 @@
-# My personal site 🎉
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Tech stack
+## Getting Started
 
-### React vs. Vue
-I knew I wanted to use React. I feel like Vue would resonate better with me, but I've found more times in my career that React was more important to know than Vue. I also acknowledge there are more options than React and Vue, but those were the two that would further my professional growth.
+First, run the development server:
 
-### Next.js vs. Gatsby vs. `create-react-app`
-This was a tougher decision. While I could've just used plain React, I thought it would make the site more extensibile and easy to develop in if I used a framework to assist with the generation and compilation of the site. After a lot of failed attempts using Gatsby and `create-react-app`, I ended up taking a Next.js tutorial and really loving it. While SSR might be overkill for a personal site, I felt the dynamic pages of Next.js would allow me to easily add a blog when I choose to go after that.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### Styled-Components vs. Chakra vs. Tailwind
-I know these aren't very equatable, but it was essentially my journey to choosing a CSS framework. At first, I loved Styled-Components because it was still _like_ writing CSS but less clunky. However, I came to terms with the fact that I am not a CSS master and need help. I then pivoted to Chakra since the UI on my team was built using that. It was pretty nice and I admit I didn't give it much of a chance. I ended up watching a Tailwind tutorial on YouTube and seeing how easy and flexible it was, I was convinced.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Upcoming tasks
-- [x] Dark mode toggle
-- [x] Hero
-- [x] Section tabs
-- [ ] About section
-- [ ] Experience section
-- [ ] Contact section
-- [ ] CI/CD
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-MVP complete
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-- [ ] Blog
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
