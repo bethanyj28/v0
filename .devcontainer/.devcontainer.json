@@ -1,6 +1,8 @@
 {
   "name": "development",
-  "image": "registry.hub.docker.com/library/node:18",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "forwardPorts": [3000],
   "settings": {
     "terminal.integrated.shell.linux": "/bin/zsh"
