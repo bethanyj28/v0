@@ -8,10 +8,10 @@ config.autoAddCss = false
 function Home({ Component, pageProps }) {
   return (
     <>
-    <GlobalStyles />
-    <ThemeProvider defaultTheme="system">
-      <Component {...pageProps} />
-    </ThemeProvider>
+      <GlobalStyles />
+      <ThemeProvider defaultTheme="system">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
