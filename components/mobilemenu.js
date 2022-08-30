@@ -13,7 +13,7 @@ const Drawer = styled.aside`
   top: 0;
   bottom: 0;
   right: 0;
-  background: var(--secondary-bg);
+  background: var(--primary-bg);
   z-index: 9;
   transform: translateX(${(props) => (props.openMenu ? 0 : 100)}vw);
   transition: 1s;
