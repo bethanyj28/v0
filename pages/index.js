@@ -1,3 +1,4 @@
+import About from '../components/About'
 import Container from '../components/Container'
 import Head from 'next/head'
 import Hero from '../components/Hero'
@@ -13,6 +14,7 @@ export default function Home() {
       <NavBar />
       <Container>
         <Hero />
+        <About />
       </Container>
     </>
   )

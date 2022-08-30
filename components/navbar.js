@@ -6,12 +6,15 @@ import styled from 'styled-components'
 
 const Bar = styled.div`
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   height: 5vh;
   width: 95vw;
-  margin: 2vw;
+  padding: 2vw;
   flex-direction: row;
+  z-index: 10;
+  background-color: var(--primary-bg);
 `
 
 const NavLinkDiv = styled.div`
@@ -32,6 +35,7 @@ const Settings = styled.div`
 
   @media ${device.tablet} {
     display: flex;
+    z-index: 11;
   }
 `
 
