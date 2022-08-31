@@ -1,4 +1,5 @@
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Container from '../components/Container'
 import Head from 'next/head'
 import Hero from '../components/Hero'
@@ -15,6 +16,7 @@ export default function Home() {
       <Container>
         <Hero />
         <About />
+        <Contact />
       </Container>
     </>
   )
