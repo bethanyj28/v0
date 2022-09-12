@@ -1,5 +1,6 @@
 import { device } from '../styles/devices'
 import styled from 'styled-components'
+import { useState } from 'react'
 
 const sections = ['about', 'blog', 'contact']
 
@@ -46,12 +47,32 @@ const Link = styled.a`
   }
 `
 
+const useHover = () => {
+  const [hovering, setHovering] = useState(false)
+  const onHoverProps = {
+    onMouseEnter: () => setHovering(true),
+    onMouseLeave: () => setHovering(false),
+  }
+
+  return [hovering, onHoverProps]
+}
+
 const NavLinks = () => {
+  const [hovering, hoveringProps] = useHover()
+
   return (
     <Links>
       {sections.map((section) => (
         <li key={section}>
-          <Link href={`#${section}`}>{section}</Link>
+          <Link href={`#${section}`}>
+            {section === 'blog' ? (
+              <span {...hoveringProps}>
+                {hovering ? 'coming soon!' : section}
+              </span>
+            ) : (
+              <span>{section}</span>
+            )}
+          </Link>
         </li>
       ))}
     </Links>

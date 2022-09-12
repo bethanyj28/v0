@@ -1,3 +1,4 @@
+import AboutBody from './aboutbody'
 import data from '../content/info.json'
 import { device } from '../styles/devices'
 import Emoji from 'react-emoji-render'
@@ -38,9 +39,7 @@ const About = () => {
       <StyledSubheader>
         <Emoji text={data.about.subheader} />
       </StyledSubheader>
-      <p>
-        <Emoji text={data.about.body} />
-      </p>
+      <AboutBody />
     </AboutContainer>
   )
 }
