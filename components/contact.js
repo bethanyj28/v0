@@ -1,4 +1,5 @@
 import data from '../content/info.json'
+import { device } from '../styles/devices'
 import Emoji from 'react-emoji-render'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -35,7 +36,11 @@ const StyledButton = styled.a`
 const SocialDiv = styled.div`
   display: flex;
   justify-content: space-evenly;
-  width: 15vw;
+  width: 20vw;
+
+  @media ${device.tablet} {
+    width: 15vw;
+  }
 `
 
 const SocialLink = styled.a`
