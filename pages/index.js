@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Bethany Janos</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/meow_bongo-keyboard.gif" />
       </Head>
       <NavBar />
       <Container>

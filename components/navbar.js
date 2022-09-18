@@ -10,11 +10,12 @@ const Bar = styled.div`
   display: flex;
   justify-content: space-between;
   height: 5vh;
-  width: 95vw;
+  width: 100vw;
   padding: 2vw;
   flex-direction: row;
   z-index: 10;
   background-color: var(--primary-bg);
+  transition: all 0.5s linear;
 `
 
 const NavLinkDiv = styled.div`
