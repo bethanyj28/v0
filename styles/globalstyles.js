@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   [data-theme="dark"] {
-    --primary-bg: #000000;
+    --primary-bg: #121212;
     --secondary-bg: #757575;
     --primary-text: #FFFFFF;
     --secondary-text: #BBBBBB;
