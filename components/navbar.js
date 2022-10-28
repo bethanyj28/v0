@@ -29,6 +29,8 @@ const NavLinkDiv = styled.div`
 const Logo = styled.a`
   text-decoration: none;
   color: var(--primary-text);
+  font-family: 'Junction', sans-serif;
+  font-weight: bold;
 `
 
 const Settings = styled.div`
@@ -43,7 +45,7 @@ const Settings = styled.div`
 const NavBar = () => {
   return (
     <Bar>
-      <Logo href="#">BJ</Logo>
+      <Logo href="#">Bj</Logo>
       <NavLinkDiv>
         <NavLinks />
       </NavLinkDiv>

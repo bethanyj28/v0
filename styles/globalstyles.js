@@ -40,4 +40,25 @@ export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
   }
+
+  @font-face {
+    font-family: "Junction";
+    src: url('/fonts/junction/junction-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+    
+  @font-face {
+    font-family: "Junction";
+    src: url('/fonts/junction/junction-bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+    
+  @font-face {
+    font-family: "Junction";
+    src: url('/fonts/junction/junction-light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+  }
 `
