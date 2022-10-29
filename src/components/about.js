@@ -1,5 +1,5 @@
 import AboutBody from './aboutbody'
-import data from '../content/info.json'
+import data from '../../content/info.json'
 import { device } from '../styles/devices'
 import Emoji from 'react-emoji-render'
 import styled from 'styled-components'

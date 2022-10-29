@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import data from '../content/info.json'
+import data from '../../content/info.json'
 import { device } from '../styles/devices'
 
 const HeroContainer = styled.div`

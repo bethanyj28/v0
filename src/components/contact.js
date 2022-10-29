@@ -1,4 +1,4 @@
-import data from '../content/info.json'
+import data from '../../content/info.json'
 import { device } from '../styles/devices'
 import Emoji from 'react-emoji-render'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
