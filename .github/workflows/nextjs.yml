@@ -75,7 +75,7 @@ jobs:
       - name: npm version
         run: npx --no-install next --version
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build --debug
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
