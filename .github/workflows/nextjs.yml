@@ -43,11 +43,6 @@ jobs:
             echo "Unable to determine packager manager"
             exit 1
           fi
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "17"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v2
         with:
