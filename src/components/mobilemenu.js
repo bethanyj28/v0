@@ -1,8 +1,8 @@
-import DarkModeToggle from './DarkModeToggle'
+import DarkModeToggle from './darkmodetoggle'
 import { device } from '../styles/devices'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import NavLinks from './NavLinks'
+import NavLinks from './navlinks'
 import styled from 'styled-components'
 import { useState } from 'react'
 

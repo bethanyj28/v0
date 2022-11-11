@@ -1,9 +1,9 @@
-import About from '../components/About'
-import Contact from '../components/Contact'
-import Container from '../components/Container'
+import About from '../components/about'
+import Contact from '../components/contact'
+import Container from '../components/container'
 import Head from 'next/head'
-import Hero from '../components/Hero'
-import NavBar from '../components/NavBar'
+import Hero from '../components/hero'
+import NavBar from '../components/navbar'
 
 export default function Home() {
   return (

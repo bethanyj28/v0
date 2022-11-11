@@ -1,7 +1,7 @@
-import DarkModeToggle from './DarkModeToggle'
+import DarkModeToggle from './darkmodetoggle'
 import { device } from '../styles/devices'
-import MobileMenu from './MobileMenu'
-import NavLinks from './NavLinks'
+import MobileMenu from './mobilemenu'
+import NavLinks from './navlinks'
 import styled from 'styled-components'
 
 const Bar = styled.div`
