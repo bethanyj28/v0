@@ -13,9 +13,10 @@ const AboutBody = () => {
       <br />
       <p>
         After four years at Red Ventures, I decided to take the next step in my
-        career and joined GitHub at the beginning of 2022. I currently work in
-        the Actions space and focus on the backend systems that power Actions
-        outputs such as logs and artifacts.
+        career and joined GitHub at the beginning of 2022. I previously worked in
+        the Actions space focusing on the backend systems that power Actions
+        outputs such as logs and artifacts. Currently, I am working on Copilot API,
+        the backend that powers Copilot chat and agents.
       </p>
       <br />
       <p>
